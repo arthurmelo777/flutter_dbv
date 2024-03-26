@@ -1,3 +1,4 @@
+// Requisitos por desbravador - SUPERVISOR
 import 'package:flutter/material.dart';
 
 void main () {
@@ -11,7 +12,20 @@ class MyApp extends StatelessWidget {
     return Scaffold(
     appBar: HeaderWidget(),
     body: Center(child: Column(
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
+        Text('Arthur # 12548', style: TextStyle(fontSize: 22)),
+        Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          OutlinedButton(
+          onPressed: () {},
+          child: Text('Voltar')),
+          OutlinedButton(
+          onPressed: () {},
+          child: Text('Salvar')),
+        ]
+        ),
         Text('Descoberta espiritual',style: TextStyle(fontSize: 20)),
         Text('Memorizar e demonstrar seu conhecimento: ', style: TextStyle(fontSize: 16)),
         CheckboxListTile(
